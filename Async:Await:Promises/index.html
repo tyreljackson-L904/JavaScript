@@ -9,19 +9,30 @@
 
     <h1>Asynchronous JavaScript</h1>
     <script>
-        const second = () => {
+        // const second = () => {
+        //     setTimeout(() => {
+        //         console.log("Async Hey there");
+        //     }, 2000);
+        // }
+
+        // const first = () => {
+        //     console.log('hey there');    
+        //     second();
+        //     console.log('the end')        ;
+        // }
+
+        // first();
+
+        function getRecipe() {
+
             setTimeout(() => {
-                console.log("Async Hey there");
-            }, 2000);
+                const recipeID = [234, 543, 234];
+                console.log(recipeID);
+            },1500);
+
         }
 
-        const first = () => {
-            console.log('hey there');    
-            second();
-            console.log('the end')        ;
-        }
-
-        first();
+        getRecipe();
 
     </script>
     
